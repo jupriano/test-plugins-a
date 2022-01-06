@@ -1,0 +1,150 @@
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.ticket-popover {
+    display: flex;
+    max-width: 380px;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: calc(50% - 311px / 2);
+    background: #FFFFFF;
+    border: 1px solid rgba(63, 67, 80, 0.16);
+    border-radius: 4px;
+}
+
+.ticket-popover-body-frame-description {
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+.ticket-popover-body-frame-description > p {
+    margin-block-start: 0;
+    color: #282c34;
+}
+
+.ticket-popover-footer {
+    display: flex;
+    height: 60px;
+    flex-direction: row;
+    align-items: center;
+    position: static;
+    flex: none;
+    order: 3;
+    flex-grow: 0;
+    align-self: stretch;
+    font-family: Open Sans;
+    font-size: 12px;
+    line-height: 16px;
+}
+
+.ticket-popover-footer > span:nth-child(3) {
+    margin-left: 4px;
+}
+
+.ticket-popover-footer-assigner-profile {
+    width: 20px;
+    height: 20px;
+    border-radius: 50px;
+    flex: none;
+}
+
+.ticket-popover-footer-assigner-name {
+    margin-left: 6px;
+    font-weight: 600;
+}
+
+.ticket-popover-body-frame > a:hover {
+    color: #0645AD;
+    text-decoration-line: underline;
+}
+
+.ticket-popover-body-frame > a {
+    font-family: Metropolis;
+    font-weight: 600;
+    text-align: left;
+    font-size: 16px;
+    line-height: 24px;
+    flex-grow: 1;
+    color: #282c34;
+    text-decoration: none;
+}
+
+.ticket-popover-footer-arrow {
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    width: 72px;
+    height:28px;
+    left: 0px;
+    bottom: -27px;
+}
+
+.ticket-popover-footer-arrow-vector {
+    position: absolute;
+    width: 26px;
+    height: 13px;
+    left: 25px;
+    top: 0px;
+    border: 1px solid rgb(63, 67, 80, 0.16);
+}
+
+.ticket-popover-footer-arrow-bottom {
+    position: absolute;
+    width: 24px;
+    height: 12px;
+    left: calc(50% - 24px / 2 + 26px);
+    top:12px;
+    background-color: red;
+    transform: rotate(120deg);
+}
+.ticket-popover-footer-arrow-bottom > span {
+    position: absolute;
+    left: 100%;
+    right: -100%;
+    top: 50%;
+    bottom: -100%;
+    background-color: #0645AD;
+    transform: rotate(120deg);
+}
+ticket-popover.bottom:after{
+    content:"";
+    position:absolute;
+    width:15px;
+    height:15px;
+    right:0px;
+    top:50%;
+    transform: translate(50%, -50%) rotate(45deg);
+    background:#F00;
+}
+
+.ticket-popover-header-title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    font-weight: 600;
+    text-align: left;
+    font-size: 16px;
+    line-height: 24px;
+    color: #282c34;
+    text-decoration: none;
+}
+
+.ticket-popover-header-title:hover {
+    color: #0645AD;
+    text-decoration-line: underline;
+}
